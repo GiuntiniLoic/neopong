@@ -6,7 +6,7 @@ func _on_pressed() -> void:
 
 
 func _start_game() -> void:
-	var board_scene: PackedScene = load("res://Game/board/board.tscn")
+	var board_scene: PackedScene = load("uid://o3merluvrn1h")
 	var board = board_scene.instantiate()
 
 	# Must be set before the node enters the tree,

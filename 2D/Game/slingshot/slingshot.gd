@@ -1,5 +1,5 @@
 extends PrivateTouchZone
-var projectile_preload = preload("res://Game/slingshot/slingshot_projectile.tscn")
+var projectile_preload = preload("uid://v0s1jbtupl54")
 
 @onready var placement_preview_6: Node2D = $PlacementPreview6
 
