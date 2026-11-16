@@ -18,4 +18,4 @@ func _on_clock_animation_finished() -> void:
 
 
 func _on_pressed() -> void:
-	get_tree().change_scene_to_file.call_deferred("res://UI/titleScreen.tscn")
+	get_tree().change_scene_to_file.call_deferred("uid://c5lrq8r70leva")

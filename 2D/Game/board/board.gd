@@ -229,5 +229,5 @@ func handle_test_script():
 			_on_game_timer_timeout()
 			
 		6: # Back to main menu
-			get_tree().change_scene_to_file("res://UI/titleScreen.tscn")
+			get_tree().change_scene_to_file("uid://c5lrq8r70leva")
 	
