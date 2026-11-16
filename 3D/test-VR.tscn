@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bekteucf7vcx1"]
+
+[ext_resource type="Script" uid="uid://e81yg3x7vqgd" path="res://3D/test_vr.gd" id="1_76d64"]
+
+[node name="TestVr" type="Node3D" unique_id=917648901]
+script = ExtResource("1_76d64")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=1767127143]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=892917414]
+
+[node name="LeftHandController" type="XRController3D" parent="XROrigin3D" unique_id=1340400147]
+tracker = &"left_hand"
+
+[node name="RoghtHandController" type="XRController3D" parent="XROrigin3D" unique_id=718811624]
+tracker = &"right_hand"
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1916954608]
+transform = Transform3D(0.63144255, 0.4901922, -0.600826, -0.6132156, 0.78991556, 0, 0.47460184, 0.36843592, 0.7993798, 0, 0, -2.7298121)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1379907709]
+transform = Transform3D(1, 0, 0, 0, 0.7518708, 0.65931046, 0, -0.65931046, 0.7518708, 0, 2.2110481, 0)

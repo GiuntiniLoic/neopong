@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://c5lrq8r70leva"]
+
+[ext_resource type="Texture2D" uid="uid://bcfdnwq3ce1wa" path="res://2D/UI/Sprites/playbtn.png" id="1_ejmsi"]
+[ext_resource type="Script" uid="uid://g82jseulempo" path="res://2D/UI/play.gd" id="2_c01nk"]
+[ext_resource type="Texture2D" uid="uid://bc6ikcx3khepc" path="res://2D/UI/Sprites/title.png" id="3_5x5js"]
+[ext_resource type="Texture2D" uid="uid://b5bnc6h6ekho2" path="res://2D/UI/Sprites/demobtn.png" id="4_r5mrd"]
+[ext_resource type="Script" uid="uid://guaj1koqxmpw" path="res://2D/UI/demo.gd" id="5_bcdfk"]
+
+[node name="Node2D" type="Node2D" unique_id=358723649]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2100951494]
+offset_left = -6.0
+offset_top = -2.0
+offset_right = 1284.0
+offset_bottom = 722.0
+color = Color(0, 0.07450981, 0.13725491, 1)
+
+[node name="Play" type="TextureButton" parent="." unique_id=747780314]
+offset_left = 189.0
+offset_top = 178.0
+offset_right = 517.0
+offset_bottom = 294.0
+rotation = 1.5707964
+texture_normal = ExtResource("1_ejmsi")
+script = ExtResource("2_c01nk")
+
+[node name="Play2" type="TextureButton" parent="." unique_id=285692169]
+offset_left = 1078.0
+offset_top = 506.0
+offset_right = 1406.0
+offset_bottom = 622.0
+rotation = -1.5707964
+texture_normal = ExtResource("1_ejmsi")
+script = ExtResource("2_c01nk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1271367454]
+position = Vector2(635.00006, 285)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("3_5x5js")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=762203898]
+offset_left = 470.0
+offset_top = 504.0
+offset_right = 798.0
+offset_bottom = 620.0
+texture_normal = ExtResource("4_r5mrd")
+script = ExtResource("5_bcdfk")
+
+[connection signal="pressed" from="Play" to="Play" method="_on_pressed"]
+[connection signal="pressed" from="Play2" to="Play2" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
